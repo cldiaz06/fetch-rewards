@@ -9,7 +9,7 @@ public class UserApiRequest {
 	private String name;
 	private int points;
 	private Date transactionDate;
-	
+
 	public String getName() {
 		return name;
 	}
@@ -28,7 +28,7 @@ public class UserApiRequest {
 	public void setTransactionDate(Date transactionDate) {
 		this.transactionDate = transactionDate;
 	}
-	
-	
-	
+
+
+
 }

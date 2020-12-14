@@ -7,7 +7,7 @@ public class UserApiResponse {
 	private String name;
 	private int points;
 	private Date transactionDate;
-	
+
 	private User user;
 
 	public String getName() {
@@ -41,7 +41,7 @@ public class UserApiResponse {
 	public void setUser(User user) {
 		this.user = user;
 	}
-	
-	
-	
+
+
+
 }

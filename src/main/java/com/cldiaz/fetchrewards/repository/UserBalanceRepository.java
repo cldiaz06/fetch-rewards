@@ -9,7 +9,7 @@ import com.cldiaz.fetchrewards.domain.User;
 public interface UserBalanceRepository extends CrudRepository<Long, User> {
 
 	public User findUserByName(String name);
-	
+
 	public void save(User user);
-	
+
 }
