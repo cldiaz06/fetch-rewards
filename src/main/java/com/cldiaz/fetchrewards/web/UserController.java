@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cldiaz.fetchrewards.domain.UserApiRequest;
 import com.cldiaz.fetchrewards.domain.UserApiResponse;
 import com.cldiaz.fetchrewards.services.UserService;
+import com.cldiaz.fetchrewards.services.UserServiceImpl;
 
 @RestController
 @RequestMapping("/user")
@@ -18,6 +19,10 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
+	
+	public UserController() {
+		this.userService = new UserServiceImpl();
+	}
 	
 	@PostMapping("/add")
 	public void  addBalance(UserApiRequest request) {

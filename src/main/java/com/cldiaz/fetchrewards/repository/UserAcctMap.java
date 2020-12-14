@@ -3,6 +3,11 @@ package com.cldiaz.fetchrewards.repository;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope("singleton")
 public class UserAcctMap {
 
 	private Map<String, Integer> userAccts;
@@ -30,6 +35,14 @@ public class UserAcctMap {
 	
 	public boolean containsKey(String name) {
 		return userAccts.containsKey(name);
+	}
+	
+	public void viewMap() {
+		System.out.println("*****Names/Point balances****");
+		for(String name: userAccts.keySet()) {
+			System.out.println(name + ": " + userAccts.get(name));
+		}
+		System.out.println("************************************");
 	}
 	
 	

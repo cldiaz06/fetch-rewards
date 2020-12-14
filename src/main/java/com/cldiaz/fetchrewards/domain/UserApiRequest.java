@@ -2,8 +2,6 @@ package com.cldiaz.fetchrewards.domain;
 
 import java.util.Date;
 
-import javax.persistence.Entity;
-
 public class UserApiRequest {
 
 	private String name;
